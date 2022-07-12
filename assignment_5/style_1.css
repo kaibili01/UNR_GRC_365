@@ -1,0 +1,131 @@
+/**
+ * style for wireframe
+ **/
+ 
+
+ /* {
+    /* box-sizing: border-box;
+    text-align: center;
+    border: 10px solid #777;
+    padding: 20px;
+    margin-bottom: 10px;
+    }  
+    */
+     
+
+    
+
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    background:black;
+    color: #777;
+    width: 960px;
+   
+       
+}
+
+header, nav, section, aside, footer {
+    display: block;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    background-color: #ebebeb;
+}
+
+
+  
+  header {
+    background: #ebebeb;
+    
+    
+    
+
+
+}
+
+  nav {
+    background: #ebebeb;
+   
+    
+    
+    
+  }
+
+
+  footer {
+    background : #ebebeb;
+    
+}
+
+  
+article {
+    color: #ebebeb;
+    background:#777;
+    padding: 20px;
+
+}
+
+h1,h2,h3{
+     background: #ebebeb;
+     color:#777;
+     border:10px solid #ebebeb;
+     padding: 20px;
+}
+
+p   {
+    background: #ebebeb;
+     color:#777;
+     /* border:10px solid #ebebeb; */
+     padding: 10px;
+     margin: 10px;
+     width: 90%;
+}
+
+
+
+/** this will control aspects of #left **/
+section {
+    background: #ebebeb;
+    width: 495px;
+    height: 267px;
+    float: left;
+    overflow: hidden;
+    
+
+}
+
+
+/* #left {
+float: left;
+width: 60%;
+height: 400px;
+
+
+
+} */
+
+  
+/** this will control aspects of #right **/
+aside {
+    background: #ebebeb;
+    display: block;
+    /* width: 40%; */
+    height: 267px;
+    /* padding: 20px; */
+    /* margin-bottom: 10px;  */
+    margin-top: 20px;
+    overflow: hidden;
+          
+}
+
+/* #right {
+    float: right;
+    width: 40%;
+    height: 400px;  
+    
+    } */
+    .clear {
+        clear: both;
+    }
