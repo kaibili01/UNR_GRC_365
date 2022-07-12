@@ -7,7 +7,7 @@ illustrates how to design a layout with FLOAT
 
 In this assignment, you will build a web design skeleton using HTML/CSS. Your completed work should look just like the image below:
 
-![Final Layout](Easier-Layout.png)
+![Final Layout](/UNR_GRC_365/assignment_5/Easier-Layout.png)
 
 ### Student Notes
 
