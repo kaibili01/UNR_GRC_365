@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>basic portfolio-assignment</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h2 id="recommended-assignment---that-portfolio-though">Basic Portfolio-Assignment</h2>
+<h3 id="overview">Overview</h3>
+<p>In this assignment, you'll build a professional portfolio site using HTML/CSS. These instructions include a short style guide; follow it to design an aesthetically pleasing layout while creating different kinds of complex HTML elements.</p>
+<h3 id="before-you-begin">Before You Begin</h3>
+<ul>
+<li>
+<p>Welcome to your first opportunity as a front-end web designer. You will be advocating for your most important client—yourself! By making a portfolio, you'll take your first step toward building your web development brand.</p>
+</li>
+<li>
+<p>This will be one of your harder assignments, if only because you're just getting your feet wet in web design. Trust us, though; it will get easier. Invest your time in this assignment, and it will pay dividends!</p>
+</li>
+</ul>
+<h3 id="instructions">Instructions</h3>
+<ol>
+<li>
+<p>Create a new repository in GitHub called <code>Basic-Portfolio</code>.</p>
+</li>
+<li>
+<p>Clone this repository to your computer using the process we went over in class.</p>
+</li>
+<li>
+<p>Navigate to the <code>Basic-Portfolio</code> folder that you just cloned onto your machine. Inside this folder, create the following:</p>
+<ul>
+<li>3 HTML documents: <code>index.html</code>, <code>contact.html</code> and <code>portfolio.html</code>.</li>
+<li>A folder called <code>assets</code>.</li>
+<li>Inside the assets directory, make two additional folders: <code>css</code> and <code>images</code>.
+<ul>
+<li>In the <code>css</code> folder, make a file called <code>style.css</code>.</li>
+<li>In the <code>css</code> folder, make a file called <code>reset.css</code>, and include the code found from the Meyerweb reset located <a href="http://meyerweb.com/eric/tools/css/reset/reset.css">here</a>.</li>
+<li>In the <code>images</code> folder, save the images you plan on using (like your profile image and the placeholder images for the portfolio).</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Push the above changes to GitHub.</p>
+<ul>
+<li>Make sure to <code>git add .</code> and <code>git commit -m &quot;initial site files&quot;</code>. Then type <code>git push origin main</code> to push your changes to your GitHub repo.</li>
+</ul>
+</li>
+<li>
+<p>Reference these screenshots for your site:</p>
+<p><img src="Images/portfolio-about-me.png" alt="Portfolio About"></p>
+<p><img src="Images/portfolio-contact.png" alt="Portfolio Contact"></p>
+<p><img src="Images/portfolio-gallery.png" alt="Portfolio Gallery"></p>
+<ul>
+<li><strong>IMPORTANT</strong> Your site's layout must match the designs in these screenshots. You'll find the specs for these designs below.</li>
+</ul>
+</li>
+<li>
+<p>When you create a website, it's standard practice to code your HTML files before writing any CSS and to write up one HTML file before moving onto the next. Write your HTML semantically, too:</p>
+<ul>
+<li>If something is a heading, you use a heading tag.</li>
+<li>If something is a list, you use an unordered or ordered list tag.</li>
+<li>So on and so forth.</li>
+</ul>
+</li>
+<li>
+<p>The content for the <code>index.html</code> should be unique to <strong>you</strong>.</p>
+<ul>
+<li>Write a paragraph or two about yourself. Make it fun, show your personality!</li>
+<li>The main logo where it says &quot;Your Name&quot; should say your name. This may make the logo section smaller or wider depending on how long your name is—that is fine and expected.</li>
+<li>Add, commit, and push your code to GitHub often, especially when you complete a page.</li>
+</ul>
+</li>
+<li>
+<p>After all of your HTML is written, you can begin styling your pages using the <code>style.css</code> file you created.</p>
+<ul>
+<li>Be sure to <a href="https://validator.w3.org/#validate_by_input">validate your html</a>.</li>
+<li>Consult the specs below these instructions for advice on styling your CSS files.</li>
+</ul>
+</li>
+<li>
+<p>Push your changes to Github.</p>
+</li>
+</ol>
+<h3 id="additional-specifcations">Additional Specifcations</h3>
+<ol>
+<li>
+<p>Colors <em>Pro-tip: Use the <a href="https://chrome.google.com/webstore/detail/eye-dropper/hmdcmlfkchdmnmnmheododdhjedfccka">Eye Dropper</a> Chrome extension to find the colors used on web pages.</em></p>
+<ul>
+<li>Teal color (used for headings and backgrounds): <code>#4aaaa5</code></li>
+<li>Regular font color (used for paragraphs and all text besides the headings): <code>#777777</code></li>
+<li>Main header background color: <code>#ffffff</code></li>
+<li>Main header border color: <code>#cccccc</code></li>
+<li>Footer background color: <code>#666666</code></li>
+<li>Main content background color: <code>#ffffff</code></li>
+<li>Main content border color: <code>#dddddd</code></li>
+</ul>
+</li>
+<li>
+<p>Fonts:</p>
+<ul>
+<li>For heading fonts use <code>font-family: 'Georgia', Times, Times New Roman, serif;</code>.</li>
+<li>For all other fonts use <code>'Arial', 'Helvetica Neue', Helvetica, sans-serif;</code>.</li>
+</ul>
+</li>
+<li>
+<p>Profile Image Found on <code>index.html</code>:</p>
+<ul>
+<li>Use a picture of yourself.</li>
+<li>If you don't have a picture, you can grab a placeholder image from <a href="https://picsum.photos/">LoremPicsuml</a>. Save the images to your <code>images</code> folder.</li>
+</ul>
+</li>
+<li>
+<p>Portfolio Images:</p>
+<ul>
+<li>Placeholder images can be found at <a href="https://picsum.photos/">LoremPicsum</a>.</li>
+<li>Save the images to your <code>images</code> folder.</li>
+</ul>
+</li>
+<li>
+<p>Background Images:</p>
+<ul>
+<li>The background pattern used was found on <a href="https://subtlepatterns.com/">Subtle Patterns</a>. You can browse through that site and find whichever pattern you like.</li>
+</ul>
+</li>
+<li>
+<p>Dimensions:</p>
+<ul>
+<li>The entire content and the main section content area is <code>960px</code> wide.</li>
+<li>Pro-tip: Use the <a href="https://chrome.google.com/webstore/detail/page-ruler/jcbmcnpepaddcedmjdcmhbekjhbfnlff?hl=en">Page Ruler</a> extension to measure the size of elements.</li>
+</ul>
+<p><img src="Images/Recommended-Dimensions.png" alt="Recommended Dimensions"></p>
+</li>
+</ol>
+<h3 id="bonus">Bonus</h3>
+<ol>
+<li>
+<p>Make your pages more sophisticated by adding style to text links, to image links, and to buttons for when a user hovers their cursor over them. A CSS hover tutorial can be found <a href="https://www.youtube.com/watch?v=bJ6oSs3xufQ">here</a>.</p>
+</li>
+<li>
+<p>You can use <a href="https://color.adobe.com/create/color-wheel/">Adobe Color</a> to find colors that match the theme (in this case, the primary color is Teal <code>#4aaaa5</code>).</p>
+</li>
+<li>
+<p>Make a &quot;sticky footer.&quot; You will notice the dark grey footer will always rest just below the content. This is fine whenever your site has enough content to push it down past the height of most monitors. But if there isn't much content in the body, the footer could rest in the middle of the page:</p>
+<ul>
+<li>Try to code the footer in a way that it will always remain at the bottom of the page, no matter how short the content is. A sticky footer tutorial can be found <a href="https://css-tricks.com/couple-takes-sticky-footer/">here</a>.</li>
+</ul>
+</li>
+</ol>
+<h3 id="helpful-hints">Helpful Hints</h3>
+<ul>
+<li>
+<p>For help with Git and GitHub, be sure to consult the GitHub Supplemental Guide sent to you in class.</p>
+</li>
+<li>
+<p>Don't forget to look into these concepts: <code>float</code>, <code>padding</code>, <code>margin</code>, <code>display</code>, <code>overflow</code>, <code>clear</code> and <code>text-align</code>.</p>
+</li>
+<li>
+<p>This will be a tough assignment, but 23 weeks from now, you'll look back to this exercise and realize just how much you've grown as a developer. Stay positive! You've got this!</p>
+</li>
+</ul>
+<hr>
+<h3 id="minimum-requirements">Minimum Requirements</h3>
+<p>Attempt to complete homework assignment as described in instructions. If unable to complete certain portions, please pseudocode these portions to describe what remains to be completed.</p>
+<hr>
+<h3 id="one-more-thing">One More Thing</h3>
+<p>If you have any questions about this project or the material we have covered, please post them in the community channels in slack so that your fellow developers can help you! If you're still having trouble, you can come to office hours for assistance from your instructor and TAs.</p>
+<p><strong>Good Luck!</strong></p>
+
+</body>
+</html>
