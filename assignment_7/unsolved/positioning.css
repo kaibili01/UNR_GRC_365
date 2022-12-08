@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 24px;
+  line-height: 32px;
+  color: #333;
+}
+
+#fixed {
+  
+}
+
+.wrapper {
+  width: 600px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+h1 {
+  
+}
+
+p {
+  
+}
+
+#relative {
+  
+}
+
+#absolute {
+  
+}

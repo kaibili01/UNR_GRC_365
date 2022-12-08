@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+  }
+  
+
+
+body{
+    background-color: #fff;
+}
+.container{
+   width:auto;
+   border-style: solid; border-color:blue; border-width: 2px; 
+}
+
+
+.row{
+   
+     border-style: solid; border-color:red; border-width: 2px; 
+}
+
+
+.col-md-4{
+   border-style: solid; border-color:red; border-width: 2px;
+}
+
+
+
+
+
+
+
+
+.carousel-inner{
+   
+    
+    
+
+}
+
+.main_wrapper{
+    width:auto;
+}
+
+.car_wrapper{
+    width:auto;
+}
+
+.carousel {
+    position: relative;
+}
+
+.carousel-item {
+    position: relative;
+    display: none;
+    float:left;
+    width: 100%;
+    margin-right: -100%;
+   -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: transform .6s ease-in-out;
+    color: black;
+}
+
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+    display: block;
+    color: black;
+}
+
+
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 1.25rem;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: black;
+    text-align: center;
+    
+}
+
+
+
+.active{
+    color: black;
+}
+
+.carousel-control-next-icon {
+    background-image: url("https://toppng.com/uploads/preview/right-arrow-icon-11549436728z3gizxwjqt.png");
+}
+
+.carousel-control-prev-icon {
+    background-image: url("https://toppng.com/uploads/preview/right-arrow-icon-11549436728z3gizxwjqt.png");
+    transform: rotateY(180deg);
+
+}
+
+.control{
+    color: black;
+}
+
+.button{
+    color: black;
+}
+
+.carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 30px;
+    height: 3px;
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: black;
+    background-clip: padding-box;
+    border: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+}
+

@@ -23,7 +23,7 @@ body {
 }
 
 #coupon {
-    position: fixed;
+  position: fixed;
 	top: 350px;
 	left: -90px;
 }
@@ -36,6 +36,7 @@ body {
 #tableContainer {
 	display: table;
 	border-spacing: 10px;
+  
 }
 
 #tableRow {

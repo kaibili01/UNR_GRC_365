@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <!-- Bootrstrap grids work with a set of variable sizes as follows:
+    xsm: <576px.  Extra Small
+    sm:  ≥576px.  Small
+    md:  ≥768px.  Medium
+    lg:  ≥992px.  Large
+    xl:  ≥1200px. Extra Large
+    xxl: ≥1400px. Extra Extra Large
+    -->
+    <div class="container">
+    <div>
+        <div class="col-12" ><h4>Example #1</h4>
+            <p>This first column will become a single unit once the viewport is larger than 576 px.</p></div>
+        <div class="col" ></div>
+        <div class="col" ></div>
+    </div>
+
+    <div class= "container">
+        <div class="row">
+            <!--This first column will become a single unit once the viewport is larger than 576 px -->
+            <div class="col-sm" style="border: 3px solid red;">
+                Column #1
+            </div>
+            <div class="col" style="border: 3px  solid red;">
+                Column #2
+            </div>
+            <div class="col" style="border: 3px  solid red;">
+                Column #3
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    
+        <div class="container">
+            <div>
+                <div class="col-12" ><h4>Example #2</h4>
+                    <p>Prior to Boostrap 5 you were required to specify how big a column was. 
+                        But this can be difficult if you do not know the size of the itemn you want to integrate into a column.
+                        Boostrap 5 and up has a default setting were if column sizes are not specified, then all columns divide space equally.
+                        Or if some columns specify the amount of space to be used, and other's do not, then the remaining space available 
+                        is allocated to the remaining column(s). This is known as "auto-layout-columns"</p></div>
+                <div class="col" ></div>
+                <div class="col" ></div>
+            </div>
+            <!--Prior to Boostrap 5 you were required to specify how big a column was. 
+        But this can be difficult if you do not know the size of the itemn you want to integrate into a column.
+        Boostrap 5 and up has a default setting were if column sizes are not specified, then all columns divide space equally.
+        Or if some columns specify the amount of space to be used, and other's do not, then the remaining space available 
+        is allocated to the remaining column(s). This is known as "auto-layout-columns"-->
+    
+        <div class= "container">
+            <div class="row">
+
+            <div class="col-6" style="border: 3px solid blue;">
+                Column #1
+            </div>
+            <div class="col-4" style="border: 3px  solid blue;">
+                Column #2
+            </div>
+            <div class="col-2" style="border: 3px  solid blue;">
+                Column #3
+            </div>
+        </div>
+    <br>
+    <br>
+    <!--In some instances breaking up columns into certain specific value combinations such as 3 and 9 will result in a 'non-responsive' outcome. 
+        However if you add 'resposive-letters' you can change this immediatly-->
+        <div class="container">
+            <div >
+                <div class="col" ><h4>Example #3</h4>
+                    <p>In some instances breaking up columns into certain specific value combinations such as 3 and 9 will result in a 'non-responsive' outcome. 
+                        However if you add 'resposive-letters' you can change this immediatly</p></div>
+                <div class="col" ></div>
+                <div class="col" ></div>
+            </div>
+            </div>
+    
+        <div class= "container">
+        <div class="row">
+            
+            <div class="col-sm-3" style="border: 3px solid orange;">
+                Column #1
+            </div>
+            <div class="col-lg-9" style="border: 3px  solid orange">
+                Column #2
+            </div> 
+        </div>
+    <br>
+    <br>
+    <!--When you are not sure of the content size that you will be using. Then you can rely on the 'auto' feature. This can result in content being flushed
+    to the left. We can resolve that issue by adding the a class in to the row such as 'justify-content-md-center'. In this case content will stay centered
+    as long as the view port is equal or less than ≥768px -->
+   
+    <div class="container">
+        <div >
+            <div class="col" ><h4>Example #4</h4>
+                <p>When you are not sure of the content size that you will be using. Then you can rely on the 'auto' feature. This can result in content being flushed
+                    to the left. We can resolve that issue by adding the a class in to the row such as 'justify-content-md-center'. In this case content will stay centered
+                    as long as the view port is equal or less than ≥768px.</p></div>
+            <div class="col" ></div>
+            <div class="col" ></div>
+        </div>
+        </div>
+    <div class= "container"> 
+        <div class="row justify-content-md-center">
+            
+            <div class="col-sm-auto" style="border: 3px solid green">
+                Column #1
+            </div>
+            <div class="col-lg-auto" style="border: 3px  solid green">
+                Column #2
+            </div> 
+        </div>
+    <br>
+    <br>
+
+    <!--If you want the content to stay centered no matter what size the viewport is then you remove the size specification within the row class attribute.
+    Without a specific size within the attribute, then the center comand will apply to all column sizes.-->
+    <div class="container">
+    <div>
+        <div class="col-12" ><h4>Example #5</h4>
+            <p>If you want the content to stay centered no matter what size the viewport is then you remove the size specification within the row class attribute.
+                Without a specific size within the attribute, then the center command will apply to all column sizes</p></div>
+        <div class="col" ></div>
+        <div class="col" ></div>
+    </div>
+    
+    
+    <div class= "container">
+        <div class="row justify-content-center">
+            
+            <div class="col-sm-auto" style="border: 3px solid violet">
+                Column #1
+            </div>
+            <div class="col-lg-auto" style="border: 3px  solid violet">
+                Column #2
+            </div> 
+        </div>
+    <br>
+    <br>
+    <!-- In the case that you want to adapt the viewport to be responsible to multiple viewports you can specify the sizes that you want within the 
+        class column size property-->
+        <div class="container">
+            <div>
+                <div class="col-12" ><h4>Example #6</h4>
+                    <p>In the case that you want to adapt the viewport to be responsible to multiple viewports you can specify the sizes that you want within the 
+                        class column size property</p></div>
+                <div class="col" ></div>
+                <div class="col" ></div>
+            </div>
+
+        <div class= "container">
+        <div class="row justify-content-center">
+            
+            <div class="col-sm-6 col-md-4" style="border: 3px solid turquoise">
+                Column #1
+            </div>
+            <div class="col-sm-6 col-md-4" style="border: 3px  solid turquoise">
+                Column #2
+            </div> 
+        </div>
+    </div>
+    <br>
+    <br>
+  </body>
+</html>

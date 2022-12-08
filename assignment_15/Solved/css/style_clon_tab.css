@@ -1,0 +1,213 @@
+/* Cloned CSS TABLE: TEAMS */
+html, body, div, span, applet, object, 
+iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+ pre, a, abbr, acronym, address, big, cite, code, 
+ del, dfn, em, img, ins, kbd, q, s, samp, small, strike, 
+ strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, 
+ ol, ul, li, fieldset, form, label, legend, table, 
+ caption, tbody, tfoot, thead, tr, th, td, article, 
+ aside, canvas, details, embed, figure, figcaption, footer, 
+ header, hgroup, main, menu, nav, output, ruby, section, 
+ summary, time, mark, audio, video {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  padding: 0;
+  border: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+    text-align: left;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+
+
+  font: inherit;
+  vertical-align: baseline;
+}
+
+
+.text_button{
+  color:#BFCAD0;
+  font-weight:lighter;
+  font-size:21px
+  
+}
+
+.btn-secondary{
+  border-width: 2px;
+  border-color: #333;
+  border-style: solid;
+}
+
+
+
+.ssrcss-1htjwoi-GroupTableWrapper e1v2uzvp1{
+  width: 24rem;
+    padding-right: 1rem;
+
+}
+
+
+
+div {
+  display: block;
+}
+
+.ssrcss-1pdlnek-Tabs {
+  font-family: ReithSans,Helvetica,Arial,freesans,sans-serif;
+  font-weight: 400;
+  font-feature-settings: '';
+  font-size: 1rem;
+  line-height: 1.375;
+  color: #141414;
+}
+
+body {
+  line-height: 1;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+.ssrcss-2i8ilj-HeadingWrapper{
+  font-family: ReithSans,Helvetica,Arial,freesans,sans-serif;
+  font-weight: 400;
+  font-feature-settings: '';
+  padding-bottom: 1rem;
+}
+
+.ssrcss-1pdlnek-Tabs * {
+  box-sizing: border-box;
+}
+
+.ssrcss-q4zz1q-StyledHeading {
+  font-family: ReithSans,Helvetica,Arial,freesans,sans-serif;
+  font-weight: 700;
+  font-feature-settings: '';
+  font-size: 1.25rem;
+  line-height: 1.2;
+  margin: 0;
+  color: #141414;
+}
+
+.ssrcss-i8abpm-TableTitle {
+  font-family: ReithSans,Helvetica,Arial,freesans,sans-serif;
+  font-weight: 400;
+  font-feature-settings: '';
+  color: #141414;
+}
+
+.ssrcss-1lp14vr-TableWrapper {
+  font-family: BBC Reith Sans,sans-serif;
+  font-style: 'normal';
+  font-family: ReithSans,Helvetica,Arial,freesans,sans-serif;
+  font-weight: 400;
+  font-feature-settings: '';
+  font-size: 1rem;
+  line-height: 1.375;
+  color: #141414;
+}
+
+.ssrcss-14j0ip6-Table {
+  width: 100%;
+  text-align: center;
+}
+
+.ssrcss-1ax29yy-TableRow {
+  border-bottom: 0;
+}
+
+.ssrcss-g39mrm-TableHeading {
+  font-size: 0.75rem;
+  padding: 0 0.5rem 0.25rem;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.ssrcss-1f39n02-VisuallyHidden {
+  position: absolute;
+  overflow: hidden;
+  margin: 0;
+  width: 1px;
+  height: 1px;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+
+.ssrcss-1dt5q6f-TableHeading {
+  font-size: 0.75rem;
+  padding: 0 0.5rem 0.25rem;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.ssrcss-1l480gk-TableRow {
+  border-bottom: 0.0625rem solid #8A8C8E;
+}
+
+.ssrcss-18otpdh-TableCell {
+  vertical-align: middle;
+  color: #545658;
+  font-size: 0.875rem;
+  background-color: #FFFFFF;
+}
+
+.ssrcss-1bxnc7t-Rank {
+    font-size: 1.125rem;
+    line-height: 1.222222222222222;
+}
+
+.ssrcss-1b7i2rm-Team {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.ssrcss-9t9keo-BadgeContainer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 2.625rem;
+  height: 2.625rem;
+}
+
+.ssrcss-1kfde46-BadgeImage {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.ssrcss-1b1a5yr-TeamNameLink {
+  font-size: 1.125rem;
+  line-height: 1.222222222222222;
+}
+
+.ssrcss-1b7i2rm-Team {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+

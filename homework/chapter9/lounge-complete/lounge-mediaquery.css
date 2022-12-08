@@ -1,4 +1,4 @@
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 375px) {
 
 body {
   font-size:           small;
@@ -38,7 +38,7 @@ h2 {
 
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 320px) {
 
 body {
   font-size:           small;
@@ -158,3 +158,4 @@ body p a:link { color: #007e7e; }
 body p a:visited { color: #333333; }
 
 }
+

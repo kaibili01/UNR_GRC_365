@@ -1,0 +1,36 @@
+
+.container{
+    border-style: double; border-width: 20px; border-color: gray;
+  
+
+}
+
+.row {
+    border-style: solid; border-color: blue; border-width: 5px;
+}
+
+
+.col, .col-lg-3, .col-lg-4, .col-lg-9,.col-lg-12{
+   border-style: solid; border-color:red; border-width: 5px; 
+}
+
+
+html, body {
+    height: 100%;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  .content {
+    flex: 1 0 auto;
+  }
+  .footer {
+    flex-shrink: 0;
+  }
+
+.footer,
+.push {
+  height:50px;
+  text-align: center;
+}

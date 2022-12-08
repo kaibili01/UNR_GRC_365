@@ -1,0 +1,126 @@
+/*
+.container{
+    border: 5px; 
+    border-style: solid;
+    border-color: gray;
+}
+
+.row{
+    border-color: blue;
+    border: width 5px;
+    border-style: solid;
+    margin: 1px;
+}
+
+.col, .col-md-3, .col-md-4, .col-md-8, .col-md-9{
+    border-color: red;
+    border: width 3px;
+    border-style: dotted;
+    
+    }
+*/
+
+
+.card{
+    border-top-left-radius: 3em; 
+    border-top-right-radius: 3em; 
+    border-bottom: 0;
+    /*border-bottom-right-radius: 1em; border-color: blue;*/
+   /* border-bottom-left-radius: 1em; border-color: blue;*/
+    border-style: solid; 
+    border-color: rgba(15, 82, 186, .50);
+    margin: 1px; 
+   
+
+}
+
+
+
+.rowsponge{
+    border-top: 0px;
+    border-right: 0px;
+    border-left:0px;
+    border-bottom: blue;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+    border-style: solid;
+    margin: 1px;
+}
+
+.rowplankton{
+    border-top: 0px;
+    border-right: 0px;
+    border-left:0px;
+    border-bottom: blue;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+    border-style: solid;
+    margin: 1px;
+}
+
+.rowpatrick{
+    border-top: 0px;
+    border-right: 0px;
+    border-left:0px;
+    border-bottom: blue;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+    border-style: solid;
+    margin: 1px;
+}
+
+.rowsandy{
+    border-top: 0px;
+    border-right: 0px;
+    border-left:0px;
+    border-bottom: blue;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+    border-style: solid;
+    margin: 1px;
+}
+
+.rowmrkrabs{
+    border-top: 0px;
+    border-right: 0px;
+    border-left:0px;
+    border-bottom: blue;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+    border-style: solid;
+    margin: 1px;
+}
+
+.rowssquidward{
+    border-top: 0px;
+    border-right: 0px;
+    border-left:0px;
+    border-bottom: blue;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+    border-style: solid;
+    margin: 1px;
+}
+
+.scroller{
+    width: 160px;
+    height: 35vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.btn {
+    border-width: 2px;
+    border-style:solid;
+    border-color: black;
+    color:rgb(255, 215, 0,);
+    
+    
+
+
+}
+

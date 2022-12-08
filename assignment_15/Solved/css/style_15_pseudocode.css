@@ -1,0 +1,75 @@
+/**
+ * Media Query Style Exercise: Psudocode guide;
+ **/
+
+* {
+  box-sizing: border-box;
+}
+
+/*
+  The background color will be #ccc
+  at browser widths above 768px
+
+body 
+  /* Typography 
+  font size at 18 pixels
+  and line height at 27 pixels
+*/
+  /* Visual 
+  background color is #ccc
+  
+}
+*/
+/*
+  The width of the wrapper will be 1024px
+  at browser widths above 768px
+*/
+
+  /* Box-model */
+
+
+  /* Positioning 
+  the margin will be 40pixels and automatic
+  */
+
+  /* Box-model
+  both the  main-content and the sidebar content should be 500 
+  pixels in width and the padding should be 30 pixels.
+  */
+
+ /*the main content should be positioned to the left 
+and the background should be #fff  */
+
+
+    /*the sidebar content should be positioned to the right
+and the background should be #eee*/
+
+/* Additional Screen Sizes: 768 pixels.
+ 
+/*1st maximum width at  768 pixels. The background should be #333.
+ The wrapper should be 100 percent in width and have a 20 pixel padding.*/
+
+ /*2nd The main content  and the sidebar content should be 100 percent in width
+  and the sidebar content should have a top margin of 40 pixels./*
+
+  
+/* Additional Screen Sizes: 320 pixels.
+
+/* 1st maximum width at 320 pixels.The background should be #333.
+ The wrapper should be 100 percent in width and have a 20 pixel padding.*/
+
+ /*2nd The main content  and the sidebar content should be 100 percent in width
+  and the sidebar content should have a top margin of 40 pixels./*
+
+
+  /* Additional Screen Sizes: 168 pixels.
+
+/* 1st maximum width at 168 pixels.The background should be #333.
+ The wrapper should be 100 percent in width and have a 20 pixel padding.*/
+
+ /*2nd The main content  and the sidebar content should be 100 percent in width
+  and the sidebar content should have a top margin of 40 pixels./*
+  
+    
+
+

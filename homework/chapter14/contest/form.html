@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Enter the Contest</title>
   </head>
-  <body>
+ <body>
     <form action="http://wickedlysmart.com/hfhtmlcss/contest.php" method="POST">
       <p>Just type in your name (and click Submit) to enter the contest:<br>
 
@@ -13,6 +13,34 @@
         <input type="submit">
       </p>
     </form>
-  </body>
+
+    <p>Give us your oppinion. It matters!</p>
+      <textarea name="comments" rows="10" cols="48"></textarea>
+    <p>Additionally: Who's your favorite to win the World Cup 2022?</p>
+      <select name="characters">
+        <option value="Brazil">Brazil</option>
+        <option value="Germany">Germany</option>
+        <option value="Senegal">Senegal</option>
+        <option value="Mexico">Mexico</option>
+        <option value="Portugal">Portugal</option>
+        <option value="Japan">Japan</option>
+      </select>
+
+      <p>How many soccer games have you watched this World Cup Qatar 2022?</p>
+       <input type="number" min="0" max="64">
+
+       <p>How passionate are you about soccer? Let's measure with our little slider</p>
+        <input type="range" id="temp" name="temp" list="tickmarks"> <br>
+        <datalist id="tickmarks">
+          <option value="0"></option>
+          <option value="25"></option>
+          <option value="50"></option>
+          <option value="75"></option>
+         <option value="100"></option>
+        </datalist>
+
+       
+    </body>  
+   
 </html>
 

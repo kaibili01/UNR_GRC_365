@@ -14,6 +14,14 @@ p {
 	color: maroon;
 }
 
-p.greentea {
+.greentea {
 	color: green;
+}
+
+.raspberry {
+	color: blue;
+}
+
+.blueberry {
+	color: purple;
 }

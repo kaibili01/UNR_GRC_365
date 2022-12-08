@@ -31,4 +31,68 @@ a:focus {
 */
 a:active {
   background-color: black;
+
 }
+
+
+/* these classes will affect the backgroud-color hover state if included within an anchor tag.*/
+
+a.ex1:hover {background-color: blue;}
+
+a.ex2:hover {background-color: sandybrown}
+
+a.ex3:hover {background-color: teal}
+
+a.ex4:hover {background-color: aliceblue}
+
+a.ex5:hover {background-color: darkkhaki}
+
+
+/* these classes will affect the color hover state if included within an anchor tag.*/
+
+a.ex1:hover {color: green;}
+
+a.ex2:hover {color: blueviolet;}
+
+a.ex3:hover {color: yellow;}
+
+a.ex4:hover {color: paleturquoise;}
+
+a.ex5:hover {color: goldenrod;}
+
+
+/* these classes will affect the color focus state if included within an anchor tag.*/
+
+a.ex1:focus {color: pink;}
+
+a.ex2:focus{color: azure;}
+
+a.ex3:focus{color: peachpuff;}
+
+a.ex4:focus{color: moccasin;}
+
+a.ex5:focus{color: plum;}
+
+/* these classes will affect the font-size if included within an anchor tag.*/
+
+a.ex1 {font-size: 52px;}
+
+a.ex2 {font-size: 42px;}
+
+a.ex3 {font-size: 32px;}
+
+a.ex4 {font-size: 22px;}
+
+a.ex5 {font-size: 12px;}
+
+/* these classes will affect the background-color of an active link if included within an anchor tag.*/
+
+a.ex1:active {background-color: firebrick;}
+
+a.ex2:active {background-color: olive}
+
+a.ex3:active {background-color: lightcoral}
+
+a.ex4:active {background-color: violet}
+
+a.ex5:active {background-color: royalblue}

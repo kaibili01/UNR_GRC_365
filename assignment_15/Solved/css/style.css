@@ -28,14 +28,28 @@ body {
   width: 1024px;
 
   /* Positioning */
-  margin: 40px auto;
+  margin: auto;
+}
+
+.wrapper_weather{
+   /* Box-model */
+   width: 1024px;
+
+   /* Positioning */
+   margin: 40px auto;
+}
+.blockquote{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size:large;
+  font-weight: bold;
 }
 
 #main-content,
 #sidebar {
   /* Box-model */
   width: 500px;
-  padding: 30px;
+  padding: 10px;
+  border-style: solid; border-color: #333; border-width: 2px;
 }
 
 #main-content {
@@ -54,12 +68,90 @@ body {
   background: #eee;
 }
 
+.article_right {
+  /* Positioning */
+  width: 500px;
+
+  float:right;
+
+  /* Visual */
+  background: #BFCAD0;
+  padding: 30px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 2px;
+  margin-right: 2px;
+ 
+}
+
+.article_left {
+  /* Positioning */
+  width: 500px;
+
+  float:left;
+
+  /* Visual */
+  background: #BFCAD0;
+  padding: 30px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.fa-droplet, .fa-anchor, .fa-dragon, .fa-crown {
+  color: aliceblue;
+  
+}
+
+
+
+
+
+.forecast {
+  margin: 0;
+  padding: .3rem;
+  background-color: #eee;
+  font: 1rem 'Fira Sans', sans-serif;
+}
+
+.forecast > h1,
+.day-forecast {
+  margin: .5rem;
+  padding: .3rem;
+  font-size: 1.2rem;
+}
+
+.day-forecast-rainy {
+  background: right/contain content-box border-box no-repeat
+      url('https://img.freepik.com/premium-vector/cloud-lightning-rain-cute-weather-realistic-icon-3d-cartoon_363543-475.jpg') white;
+}
+
+.day-forecast-sunny {
+  background: right/contain content-box border-box no-repeat
+      url('https://cdn3.iconfinder.com/data/icons/bichromicons-weather-elements/432/flat.weather.00.elements.02.sun-512.png') white;
+}
+
+.day-forecast-spotty {
+  background: right/contain content-box border-box no-repeat
+      url('https://cdn3.iconfinder.com/data/icons/picons-weather/57/13_showers-512.png') white;
+}
+.day-forecast-spotty >h2,
+.day-forecast-spotty > p,
+.day-forecast-sunny >h2,
+.day-forecast-sunny > p,
+.day-forecast > h2,
+.day-forecast > p {
+  margin: .2rem;
+  font-size: 1rem;
+}
+
 @media screen and (max-width: 768px) {
   body {
     background-color: #333;
   }
 
-  .wrapper {
+  .wrapper, .wrapper_weather, .article_left, .article_right {
     /* Box-model */
     width: 100%;
     padding: 20px;
@@ -83,7 +175,7 @@ body {
     background-color: #333;
   }
 
-  .wrapper {
+  .wrapper, .wrapper_weather, .article_left, .article_right {
     /* Box-model */
     width: 100%;
     padding: 20px;
@@ -105,7 +197,7 @@ body {
     background-color: #333;
   }
 
-  .wrapper {
+  .wrapper,.wrapper_weather, .article_left, .article_right {
     /* Box-model */
     width: 100%;
     padding: 20px;
@@ -120,3 +212,6 @@ body {
     margin-top: 40px;
   }
 }
+
+
+

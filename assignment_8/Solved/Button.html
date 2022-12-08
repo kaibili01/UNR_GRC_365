@@ -8,15 +8,45 @@
     <title>Button Example!</title>
 
     <!-- CSS Sheet -->
-    <link rel="stylesheet" href="buttonStyle.css">
+   
+    <!-- Bellow is the link to the local style sheet that can be used when or if the bootsrap style sheet goes down -->
+     <!--<link rel="stylesheet" href="buttonStyle.css"> -->
+
+  <!--Bellow is the active bootstrap link so that we can apply boostrap library components to customize our html pages -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> 
+  
+  <!-- Bellow is the link to the local style sheet that is used to further customize the boostrap compononets that are active. This works in conjuctiont with our stylesheet above.-->
+ <link  rel= "stylesheet" href="button_style_bootstrap_assist.css"> 
 
   </head>
 
   <body>
 
-    <h1>Click Me!</h1>
-    <a href="#">I'm a Link</a>
+    <h1>Click Me! <a href="#">I'm a Link</a></h1>
+    
+
+    <h3>Next: Create five new links that contain the attribute qualities of this exampe but change 
+      the colors and the focus of the pseudo classes via a local CSS style.</h3> <br>
+      
+      <h3>Additionaly, create an option to conform all the quality states of a link via bootstrap AND by creating another local style sheet to ASSIST you in modifying your bootstrap classes. </h3>
+
+      <h1>Click Me! <a href="#" class="link-primary" >I'm a Link</a></h1>
+    
+
+    <h1>Click Me!  <a href="#" class="link-secondary">I'm a Link</a></h1>
+   
+
+    <h1>Click Me!  <a href="#" class="link-success">I'm a Link</a></h1>
+   
+    <h1>Click Me! <a href="#" class="link-danger">I'm a Link</a></h1>
+    
+
+    <h1>Click Me!  <a href="#" class="link-warning">I'm a Link</a>
+    </h1>
+   
+
 
   </body>
 
 </html>
+

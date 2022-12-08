@@ -1,0 +1,23 @@
+body {
+    background-color:  #223BC9;
+   
+
+} 
+
+.navbar{
+    border-bottom: 4px inset goldenrod;
+    border-radius: 10px;
+    border-top-style: inset;
+    border-top-style: thick;
+    border-top-color: lemonchiffon;
+    background-color: #FF0000;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: azure;
+}
+
+label{
+    color: azure;
+}
+

@@ -1,0 +1,67 @@
+
+/*This style sheet works in conjunction with our bootstrap components */
+
+
+/*These five classes bellow affect the background color of the links when we hover over them*/
+ .link-primary:hover{
+    background-color: blue;
+  }
+
+  .link-secondary:hover{
+    background-color: sandybrown; 
+  }
+  .link-success:hover{
+    background-color: teal; 
+  }
+
+  .link-danger:hover{
+    background-color: aliceblue;
+  }
+
+  .link-warning:hover{
+    background-color: darkkhaki; 
+  }
+
+/*These five classes bellow affect the font size of each link accordingly*/
+
+  .link-primary{
+    font-size: 52px;
+  }
+
+  .link-secondary{
+    font-size: 42px;
+  }
+
+  .link-success{
+    font-size: 32px;
+  }
+
+  .link-danger{
+    font-size: 22px;
+  }
+
+  .link-warning{
+    font-size: 12px;
+  }
+
+/*These five classes bellow affect the background color of the links when the link is active*/
+
+  .link-primary:active{
+  background-color: firebrick;
+  }
+
+  .link-secondary:active{
+  background-color: olive;
+  }
+
+  .link-success:active{
+  background-color:lightcoral;
+  }
+
+  .link-danger:active{
+  background-color:violet;
+  }
+
+  .link-warning:active{
+  background-color:royalblue;
+  }

@@ -11,34 +11,180 @@
   <!-- Bootstrap CDN -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
+   <!--Font Awesome-->
+   <script src="https://kit.fontawesome.com/14313198bc.js" crossorigin="anonymous"></script>  
+
+  <!-- Local CSS-->
+  <link rel="stylesheet" type="text/css" href="inclass-demo.css">
+
+
 </head>
 
 <body>
-  <!-- Start Nav -->
+  <!-- Start Nav: External -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <span class="navbar-brand mb-1 h1">Navbar</span>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  
+  <!--First Button-->
+    <span class="navbar-brand mb-1 h1">
+      <a href="https://www.google.com/"> 
+        <span class="navbar-brand mb-0 h1">
+          <button type="button" class="btn btn-danger">
+            <i class="fa-solid fa-bomb"></i>
+            <h6>bombita</h6>
+          </button>
+        </span>
+      </a>
+    </span>
+ <!--Second Button-->
+    <span class="navbar-brand mb-1 h1">
+      <a href="https://www.google.com/"> 
+        <span class="navbar-brand mb-0 h1">
+          <button type="button" class="btn btn-warning">
+            <i class="fa-solid fa-mask"></i>
+            <h6>maskarita</h6>
+          </button>
+        </span>
+      </a>
+    </span>
+<!--Third Button-->
+<span class="navbar-brand mb-1 h1">
+  <a href="https://www.google.com/"> 
+    <span class="navbar-brand mb-0 h1">
+      <button type="button" class="btn btn-success">
+        <i class="fa-regular fa-lightbulb"></i>
+        <h6>super-idea</h6>
+      </button>
+    </span>
+  </a>
+</span>
+<!--Fourth Button-->
+<span class="navbar-brand mb-1 h1">
+  <a href="https://www.google.com/"> 
+    <span class="navbar-brand mb-0 h1">
+      <button type="button" class="btn btn-info">
+        <i class="fa-sharp fa-solid fa-truck-fast"></i>
+        <h6>expedited</h6>
+      </button>
+    </span>
+  </a>
+</span>
+
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation";>
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
     </div>
+   
   </nav>
+  <br>
+  <br>
+
   <!-- End Nav -->
 
+  <!--Side Scroller-->
+  <div class="scroller">
+  <div id="list-example" class="list-group">
+    <a class="list-group-item list-group-item-action" href="#list-item-1">SpongeBob</a>
+    <a class="list-group-item list-group-item-action" href="#list-item-2">Plankton</a>
+    <a class="list-group-item list-group-item-action" href="#list-item-3">Patrick</a>
+    <a class="list-group-item list-group-item-action" href="#list-item-4">Sandy</a>
+    <a class="list-group-item list-group-item-action" href="#list-item-5">Mr.Krabs</a>
+    <a class="list-group-item list-group-item-action" href="#list-item-6">Squidward</a>
+
+  </div>
+  <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0"></div>
+<!--Scroller Ends Here-->
+</div>
+
   <!-- content goes here -->
+  
   <div class="container">
-      <div class="row">
+    <!-- Inner Nav
+       <div class="row-lg-12">
+ 
+     
+    
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  
+    
+      <span class="navbar-brand mb-1 h1">
+        <a href="https://www.google.com/"> 
+          <span class="navbar-brand mb-0 h1">
+            <button type="button" class="btn btn-danger">
+              <i class="fa-solid fa-bomb"></i>
+              <h6>bombita</h6>
+            </button>
+          </span>
+        </a>
+      </span>
+   
+      <span class="navbar-brand mb-1 h1">
+        <a href="https://www.google.com/"> 
+          <span class="navbar-brand mb-0 h1">
+            <button type="button" class="btn btn-warning">
+              <i class="fa-solid fa-mask"></i>
+              <h6>maskarita</h6>
+            </button>
+          </span>
+        </a>
+      </span>
+  
+  <span class="navbar-brand mb-1 h1">
+    <a href="https://www.google.com/"> 
+      <span class="navbar-brand mb-0 h1">
+        <button type="button" class="btn btn-success">
+          <i class="fa-regular fa-lightbulb"></i>
+          <h6>super-idea</h6>
+        </button>
+      </span>
+    </a>
+  </span>
+  
+  <span class="navbar-brand mb-1 h1">
+    <a href="https://www.google.com/"> 
+      <span class="navbar-brand mb-0 h1">
+        <button type="button" class="btn btn-info">
+          <i class="fa-sharp fa-solid fa-truck-fast"></i>
+          <h6>expedited</h6>
+        </button>
+      </span>
+    </a>
+  </span>
+      
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      </div>
+    </nav>
+  
+    
+
+    </div>
+    <br>
+      <br>
+   -->
+    
+   
+    <!--SpongeBob Squarepants Prolile Bellow-->
+    <div class="rowsponge">
+    <div class="row">
           <div class="col-md-8">
-            <h1>About Me</h1>
+            <h1  id="list-item-1">About Me</h1>
             <div class="row">
                 <div class="col-md-3">
-                    <img src="http://www.placehold.it/150x150" class="img img-thumbnail" style="float: left;">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit magni molestias accusamus eos recusandae veritatis fuga exercitationem laudantium explicabo. Tenetur impedit incidunt omnis! Sapiente eum mollitia, fugit fuga possimus ducimus?</p>
+                    <img src="https://nickelodeonuniverse.com/wp-content/uploads/Spongebob.png" class="img img-thumbnail" style="float: left;" width="150px" height="150px">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit magni molestias accusamus eos recusandae veritatis fuga 
+                      exercitationem laudantium explicabo. Tenetur impedit incidunt omnis! Sapiente eum mollitia, fugit fuga possimus ducimus?</p>
                 </div>
                 <div class="col-md-9">
                     <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, reprehenderit porro ducimus voluptates ratione eum nesciunt reiciendis et harum, aperiam, esse alias repudiandae nam ab quasi deleniti ea sequi excepturi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat at a eius. Dolorum pariatur quidem magni dolor veritatis dolore accusamus hic eaque quod accusantium, exercitationem ut possimus autem repellendus nemo?
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, reprehenderit porro ducimus voluptates ratione eum 
+                        nesciunt reiciendis et harum, aperiam, esse alias repudiandae nam ab quasi deleniti ea sequi excepturi. Lorem ipsum 
+                        dolor sit, amet consectetur adipisicing elit. Fugiat at a eius. Dolorum pariatur quidem magni dolor veritatis dolore 
+                        accusamus hic eaque quod accusantium, exercitationem ut possimus autem repellendus nemo?
                     </p>
                 </div>
             </div>
@@ -58,7 +204,218 @@
                 </div>
             </div>
           </div>
+        </div>
+          <!--Plankton Prolile Bellow-->
+          <br>
+          <br>
+          <div class="rowplankton">
+          <div class="row">
+            <div class="col-md-8">
+              <h1 id="list-item-2">About Me</h1>
+              <div class="row">
+                  <div class="col-md-3">
+                      <img src="https://www.kindpng.com/picc/m/140-1407913_plankton-png-transparent-png.png" class="img img-thumbnail" style="float: left;" width="150px" height="150px">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit magni molestias accusamus eos recusandae veritatis fuga 
+                        exercitationem laudantium explicabo. Tenetur impedit incidunt omnis! Sapiente eum mollitia, fugit fuga possimus ducimus?</p>
+                  </div>
+                  <div class="col-md-9">
+                      <p>
+                          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, reprehenderit porro ducimus voluptates ratione eum 
+                          nesciunt reiciehttps://nickelodeonuniverse.com/wp-content/uploads/Spongebob.pngndis et harum, aperiam, esse alias repudiandae nam ab quasi deleniti ea sequi excepturi. Lorem ipsum 
+                          dolor sit, amet consectetur adipisicing elit. Fugiat at a eius. Dolorum pariatur quidem magni dolor veritatis dolore 
+                          accusamus hic eaque quod accusantium, exercitationem ut possimus autem repellendus nemo?
+                      </p>
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                  <h5 class="card-body">
+                      <h5 class="card-title">
+                          Card Title
+                      </h5>
+                      <h6 class="card-subtitle text-muted mb-2">
+                          Card Subtitle
+                      </h6>
+                      <p class="card-text">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ab consectetur qui voluptatibus alias. Libero est ipsam nisi aperiam sint. Dolorem fugiat deserunt magnam tempora enim ex incidunt ab odio?
+                      </p>
+                  </div>
+              </div>
+            </div>
+          </div>
+            <br>
+            <br>
+
+      <!--Patrick Prolile Bellow-->
+      <div class="rowpatrick">
+    <div class="row">
+      <div class="col-md-8">
+        <h1 id="list-item-3">About Me</h1>
+        <div class="row">
+            <div class="col-md-3">
+                <img src="https://static.wikia.nocookie.net/nickelodeon-movies/images/7/7e/Patrick_Star.png/revision/latest?cb=20180107193038" class="img img-thumbnail" style="float: left;" width="150px" height="150px">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit magni molestias accusamus eos recusandae veritatis fuga 
+                  exercitationem laudantium explicabo. Tenetur impedit incidunt omnis! Sapiente eum mollitia, fugit fuga possimus ducimus?</p>
+            </div>
+            <div class="col-md-9">
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, reprehenderit porro ducimus voluptates ratione eum 
+                    nesciunt reiciendis et harum, aperiam, esse alias repudiandae nam ab quasi deleniti ea sequi excepturi. Lorem ipsum 
+                    dolor sit, amet consectetur adipisicing elit. Fugiat at a eius. Dolorum pariatur quidem magni dolor veritatis dolore 
+                    accusamus hic eaque quod accusantium, exercitationem ut possimus autem repellendus nemo?
+                </p>
+            </div>
+        </div>
       </div>
+      <div class="col-md-4">
+        <div class="card">
+            <h5 class="card-body">
+                <h5 class="card-title">
+                    Card Title
+                </h5>
+                <h6 class="card-subtitle text-muted mb-2">
+                    Card Subtitle
+                </h6>
+                <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ab consectetur qui voluptatibus alias. Libero est ipsam nisi aperiam sint. Dolorem fugiat deserunt magnam tempora enim ex incidunt ab odio?
+                </p>
+            </div>
+        </div>
+      </div>
+    </div>
+
+      <!--Sandy Prolile Bellow-->
+      <br>
+      <br>
+      <div class="rowsandy">
+      <div class="row">
+        <div class="col-md-8">
+          <h1 id="list-item-4">About Me</h1>
+          <div class="row">
+              <div class="col-md-3">
+                  <img src="https://i.pinimg.com/originals/dc/9b/be/dc9bbe88452d20e9f630d9abc0069649.jpg" class="img img-thumbnail" style="float: left;" width="150px" height="150px">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit magni molestias accusamus eos recusandae veritatis fuga 
+                    exercitationem laudantium explicabo. Tenetur impedit incidunt omnis! Sapiente eum mollitia, fugit fuga possimus ducimus?</p>
+              </div>
+              <div class="col-md-9">
+                  <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, reprehenderit porro ducimus voluptates ratione eum 
+                      nesciunt reiciehttps://nickelodeonuniverse.com/wp-content/uploads/Spongebob.pngndis et harum, aperiam, esse alias repudiandae nam ab quasi deleniti ea sequi excepturi. Lorem ipsum 
+                      dolor sit, amet consectetur adipisicing elit. Fugiat at a eius. Dolorum pariatur quidem magni dolor veritatis dolore 
+                      accusamus hic eaque quod accusantium, exercitationem ut possimus autem repellendus nemo?
+                  </p>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+              <h5 class="card-body">
+                  <h5 class="card-title">
+                      Card Title
+                  </h5>
+                  <h6 class="card-subtitle text-muted mb-2">
+                      Card Subtitle
+                  </h6>
+                  <p class="card-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ab consectetur qui voluptatibus alias. Libero est ipsam nisi aperiam sint. Dolorem fugiat deserunt magnam tempora enim ex incidunt ab odio?
+                  </p>
+              </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+
+      <!--Mr.Krabs Prolile Bellow-->
+      <div class="rowmrkrabs">
+      <div class="row">
+        <div class="col-md-8">
+          <h1 id="list-item-5">About Me</h1>
+          <div class="row">
+              <div class="col-md-3">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLBrxst6Ezr-fAkHhnJVSy7YjuKkoIn-QQBQ&usqp=CAU" class="img img-thumbnail" style="float: left;" width="150px" height="150px">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit magni molestias accusamus eos recusandae veritatis fuga 
+                    exercitationem laudantium explicabo. Tenetur impedit incidunt omnis! Sapiente eum mollitia, fugit fuga possimus ducimus?</p>
+              </div>
+              <div class="col-md-9">
+                  <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, reprehenderit porro ducimus voluptates ratione eum 
+                      nesciunt reiciehttps://nickelodeonuniverse.com/wp-content/uploads/Spongebob.pngndis et harum, aperiam, esse alias repudiandae nam ab quasi deleniti ea sequi excepturi. Lorem ipsum 
+                      dolor sit, amet consectetur adipisicing elit. Fugiat at a eius. Dolorum pariatur quidem magni dolor veritatis dolore 
+                      accusamus hic eaque quod accusantium, exercitationem ut possimus autem repellendus nemo?
+                  </p>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+              <h5 class="card-body">
+                  <h5 class="card-title">
+                      Card Title
+                  </h5>
+                  <h6 class="card-subtitle text-muted mb-2">
+                      Card Subtitle
+                  </h6>
+                  <p class="card-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ab consectetur qui voluptatibus alias. Libero est ipsam nisi aperiam sint. Dolorem fugiat deserunt magnam tempora enim ex incidunt ab odio?
+                  </p>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Squidward Prolile Bellow-->
+      <br>
+      <br>
+      <div class="rowssquidward">
+      <div class="row">
+        <div class="col-md-8">
+          <h1 id="list-item-6">About Me</h1>
+          <div class="row">
+              <div class="col-md-3">
+                  <img src="https://thesource.com/wp-content/uploads/2019/11/Squidward-Spinoff-Reportedly-in-the-Works-at-Netflix-.png" class="img img-thumbnail" style="float: left;" width="150px" height="150px">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit magni molestias accusamus eos recusandae veritatis fuga 
+                    exercitationem laudantium explicabo. Tenetur impedit incidunt omnis! Sapiente eum mollitia, fugit fuga possimus ducimus?</p>
+              </div>
+              <div class="col-md-9">
+                  <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, reprehenderit porro ducimus voluptates ratione eum 
+                      nesciunt reiciehttps://nickelodeonuniverse.com/wp-content/uploads/Spongebob.pngndis et harum, aperiam, esse alias repudiandae nam ab quasi deleniti ea sequi excepturi. Lorem ipsum 
+                      dolor sit, amet consectetur adipisicing elit. Fugiat at a eius. Dolorum pariatur quidem magni dolor veritatis dolore 
+                      accusamus hic eaque quod accusantium, exercitationem ut possimus autem repellendus nemo?
+                  </p>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+              <h5 class="card-body">
+                  <h5 class="card-title">
+                      Card Title
+                  </h5>
+                  <h6 class="card-subtitle text-muted mb-2">
+                      Card Subtitle
+                  </h6>
+                  <p class="card-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ab consectetur qui voluptatibus alias. Libero est ipsam nisi aperiam sint. Dolorem fugiat deserunt magnam tempora enim ex incidunt ab odio?
+                  </p>
+              </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+
+          
+      </div>
+      
+
+      
+
+      
   </div>
 
   <!-- jQuery CDN -->
