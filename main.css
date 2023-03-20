@@ -1,0 +1,196 @@
+ @import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Caladea:ital,wght@0,400;0,700;1,400;1,700&family=Cutive+Mono&display=swap');
+
+
+ /*
+ font-family: 'Anton', sans-serif;
+ font-family: 'Archivo Black', sans-serif;
+ 
+ font-family: 'Cutive Mono', monospace;
+*/
+
+ body{
+    background-color: #f8f9fa;
+    
+    
+}
+
+.display-4-{
+    font-family: 'Cutive Mono', monospace;
+    font-weight:bold;
+    font-size: 40px;
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+/*s
+h1, h2{
+    color:#cc6600;
+    border-bottom: thin dotted #888888;
+}
+*/
+
+.container{
+    float: left;
+    background-color: #f8f9fa;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+    margin: 10px;
+    
+    
+}
+
+.intro_row{
+    float: left;
+    background-color: #f8f9fa;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+    margin: 10px;
+    font-family:'Cutive Mono', monospace;
+    font-size: 16px;
+    font-weight: 400px;
+    font-weight: bold;
+    
+    
+}
+
+
+
+.maintable {
+    
+    caption-side: bottom;
+    width:max-content;
+    border-collapse: collapse;
+    table-layout: right;
+   
+    
+    
+    
+}
+
+/* this class can affect the background color of the table row if applied to the <tr> tag/*
+.cellcolor{
+    background-color: #FFFFFF;
+}
+
+
+but instead we can create the rule bellow to affect every odd <tr> child of the table accordingly 
+*/
+
+tr:nth-child(odd){
+    background-color: #FFFFFF;
+   
+}
+
+th{
+    background-color: #FFFFFF;
+    
+}
+
+
+ td, th{
+    border: thin dotted gray;
+    padding: 5px;
+ }
+
+ 
+
+
+
+ caption{
+    font-style: italic;
+    padding-top: 8px;
+ }
+
+.center-aligned{
+    text-align: center;
+}
+
+li{
+    font-size:small;
+    
+}
+
+.display-4-{
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.lead {
+    text-align: center;
+
+   
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+    
+}
+
+
+
+.btn, .btn-secondary{
+    color: #000000;
+    background-color:#f8f9fa;
+    border-style: hidden;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+
+}
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+    color: #000000;
+    background-color:#f8f9fa;
+    border-style: hidden;
+}
+
+
+
+#vid_intro{
+    width:600px;
+    height:400px;
+    float: right;
+    background-color: #FFFFFF;
+    padding:15px;
+    border:1px dashed gray;
+    outline:1px dashed gray;
+    outline-offset:-5px;
+   
+}
+
+.navbar{
+    float: right;
+}
