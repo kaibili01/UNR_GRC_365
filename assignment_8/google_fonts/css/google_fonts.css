@@ -1,0 +1,21 @@
+
+body{
+    font-family: 'Bona Nova', serif;
+    font-family: 'Roboto Slab', serif;
+}
+
+p{
+    font-family: 'Bona Nova', serif;
+}
+
+h1{
+    font-family: 'Noto Sans NKo Unjoined', sans-serif;
+}
+
+.nav-link{
+    color: chartreuse;
+}
+
+.nav-link:active{
+    color:crimson
+}

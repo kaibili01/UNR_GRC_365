@@ -3,15 +3,18 @@
 
 
 /*These five classes bellow affect the background color of the links when we hover over them*/
- .link-primary:hover{
+ .link-primary{
     background-color: blue;
+    opacity: 50%;
+    font-size: 52px;
   }
 
   .link-secondary:hover{
     background-color: sandybrown; 
+   
   }
   .link-success:hover{
-    background-color: teal; 
+    background-color teal; 
   }
 
   .link-danger:hover{
@@ -24,9 +27,7 @@
 
 /*These five classes bellow affect the font size of each link accordingly*/
 
-  .link-primary{
-    font-size: 52px;
-  }
+ 
 
   .link-secondary{
     font-size: 42px;

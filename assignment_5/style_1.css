@@ -42,10 +42,7 @@ header, nav, section, aside, footer {
     background: #ebebeb;
     
     
-    
-
-
-}
+    }
 
   nav {
     background: #ebebeb;
@@ -129,5 +126,8 @@ aside {
     
     } */
     .clear {
-        clear: both;
-    }
+      clear: both;
+  }
+
+  
+

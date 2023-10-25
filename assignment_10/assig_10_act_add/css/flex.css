@@ -1,0 +1,26 @@
+.container-fluid{
+   
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    padding-top: 5%;
+    background-color: black;
+
+}
+
+
+
+
+
+
+
+
+.col, .col-2, .col-4, .col-6, .col-sm{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+color: azure;
+text-align: center;
+border-style: solid;
+    border-color:  azure;
+    border-width: 2px;
+
+}
