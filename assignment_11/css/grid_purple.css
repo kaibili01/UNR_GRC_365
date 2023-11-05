@@ -1,0 +1,29 @@
+.container{
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    background-color:violet;
+}
+
+.row{
+    border-style:dotted;
+    border-width: 2px;
+    border-color: green;
+}
+
+.col {
+    border-style:solid;
+    border-width: 2px;
+    border-color:orange;
+}
+
+
+.col-4 {
+    border-style:solid;
+    border-width: 2px;
+    border-color:blue;
+    text-align:center;
+}
+
+
+
