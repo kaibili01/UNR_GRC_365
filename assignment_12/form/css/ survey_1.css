@@ -1,0 +1,25 @@
+
+body{
+    background-color: #89CFF0;
+}
+.container{
+    background-color:cornflowerblue;
+    border-radius: 10px;
+    margin: 50px;
+    width: 800px;
+
+}
+
+.header{
+   text-align: center;
+   color: aliceblue;
+}
+
+.subtext{
+    text-align: center;
+    color: aliceblue;
+}
+
+.text_field_row{
+    width: 800px;
+}

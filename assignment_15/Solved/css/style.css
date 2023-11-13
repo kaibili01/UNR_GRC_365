@@ -172,7 +172,7 @@ body {
 /* Width at 320px and below */
 @media screen and (max-width: 320px) {
   body {
-    background-color: #333;
+    background-color:aqua;
   }
 
   .wrapper, .wrapper_weather, .article_left, .article_right {
