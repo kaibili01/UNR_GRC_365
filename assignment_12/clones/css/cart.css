@@ -1,0 +1,142 @@
+.slidecarthq button {
+    cursor: pointer
+}
+
+#slidecarthq .slidecarthq {
+    background: rgb(var(--color-background)) !important;
+    color: rgb(var(--color-foreground)) !important
+}
+
+#slidecarthq .header {
+    height: 4.7rem;
+    padding: 0 2rem !important
+}
+
+#slidecarthq .header h2 {
+    color: rgb(var(--color-foreground)) !important;
+    font-size: 1.1rem !important;
+    font-weight: 400 !important;
+    line-height: 1.27 !important;
+    text-transform: uppercase
+}
+
+#slidecarthq .header button {
+    background-color: rgba(var(--color-foreground), .05) !important
+}
+
+#slidecarthq .quantity-selector button {
+    height: 2.4rem !important;
+    border: 1px solid rgba(var(--color-foreground), .1) !important
+}
+
+#slidecarthq .quantity-selector button svg path {
+    fill: rgb(var(--color-foreground)) !important
+}
+
+#slidecarthq .header button svg path,
+#slidecarthq .item .main-top button svg path {
+    fill: rgba(var(--color-foreground), .95) !important
+}
+
+#slidecarthq .header .cart-count {
+    display: none
+}
+
+#slidecarthq .items {
+    padding: 0;
+    margin: 0 1rem
+}
+
+#slidecarthq .header+.items {
+    border-top: 1px solid rgba(var(--color-foreground), .08) !important
+}
+
+#slidecarthq .item {
+    padding: 2rem 0 !important;
+    border-bottom: 1px solid rgba(var(--color-foreground), .08) !important
+}
+
+#slidecarthq .item .price,
+#slidecarthq .item .title,
+#slidecarthq .item .title a {
+    color: rgb(var(--color-foreground)) !important;
+    font-size: 1.1rem !important;
+    font-weight: 400 !important;
+    line-height: 1.27 !important;
+    text-transform: uppercase !important
+}
+
+#slidecarthq .item:last-of-type {
+    border-bottom: 0
+}
+
+@media screen and (min-width: 768px) {
+    #slidecarthq .items {
+        padding: 0;
+        margin: 0 2rem
+    }
+}
+
+#slidecarthq .main-bottom .quantity-selector input,
+#slidecarthq .main-bottom .quantity-selector input[type=text] {
+    width: 3rem;
+    height: 2.4rem;
+    border: 0 !important;
+    border-top: 1px solid rgba(var(--color-foreground), .1) !important;
+    border-bottom: 1px solid rgba(var(--color-foreground), .1) !important;
+    color: rgb(var(--color-foreground)) !important
+}
+
+#slidecarthq .quantity-selector button:first-of-type {
+    border-right: 0 !important;
+    border-bottom-left-radius: 4px !important;
+    border-top-left-radius: 4px !important
+}
+
+#slidecarthq .quantity-selector button:last-of-type {
+    border-left: 0 !important;
+    border-bottom-right-radius: 4px !important;
+    border-top-right-radius: 4px !important
+}
+
+#slidecarthq .rewards-progress,
+#slidecarthq .button,
+#slidecarthq .dark .rewards-progress,
+#slidecarthq .dark .button,
+#slidecarthq .dark .upsell-add button {
+    background: rgb(var(--color-foreground)) !important;
+    color: rgb(var(--color-background)) !important
+}
+
+#slidecarthq .footer.sticky-footer {
+    background: transparent !important
+}
+
+#slidecarthq .footer-row,
+#slidecarthq .footer-row strong {
+    color: rgb(var(--color-foreground)) !important;
+    font-size: 1.1rem !important;
+    font-weight: 400 !important;
+    line-height: 1.27 !important;
+    text-transform: uppercase
+}
+
+#slidecarthq .footer-row:first-of-type {
+    display: none
+}
+
+#slidecarthq .footer-row~.footer-row:last-of-type {
+    border-top: 0 !important
+}
+
+#slidecarthq .footer .button {
+    height: 4.4rem;
+    border-radius: 4px !important;
+    box-shadow: none;
+    font-size: 1.1rem !important;
+    font-weight: 400 !important;
+    line-height: 1.27 !important;
+    text-transform: uppercase !important
+}
+
+/*# sourceMappingURL=/cdn/shop/t/5/assets/hattie-slidecart.css.map?v=81366282630159534671639435278 */
