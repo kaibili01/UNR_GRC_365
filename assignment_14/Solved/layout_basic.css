@@ -1,0 +1,49 @@
+.container{
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+}
+
+
+.row{
+    border-width: 2px;
+    border-color:red;
+    border-style: solid;
+
+}
+
+.col, .col-md-8, .col-md-9, .col-md-3, .col-md-4{
+    border-width: 2px;
+    border-color:blue;
+    border-style: solid;
+
+}
+
+.col-md-8 {
+    border-width: 2px;
+    border-color:burlywood;
+    border-style: solid;
+}
+
+.col-md-9{
+    border-width: 2px;
+    border-color:darkgreen;
+    border-style: solid;
+}
+
+.col-md-3{
+    border-width: 2px;
+    border-color:blueviolet;
+    border-style: solid;
+
+}
+
+.col-md-4{
+    border-width: 2px;
+    border-color:chartreuse;
+    border-style: solid;
+
+}
+
+
+
